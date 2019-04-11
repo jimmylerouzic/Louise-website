@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
-  resources :gallery, only: [:index, :show, :new, :create]
+  get '/galery', to: 'products#index'
+  resources :products, only: [:create, :new]
 end

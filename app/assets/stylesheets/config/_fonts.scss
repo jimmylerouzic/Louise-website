@@ -11,4 +11,11 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
    src: font-url('Sofia-Pro-Black.ttf') format('truetype')
  }
 
- $my-font: "Sofia-Pro-Black";
+ $sofia-font-black: "Sofia-Pro-Black";
+
+ @font-face {
+   font-family: "Sofia-Pro-Regular";
+   src: font-url('Sofia-Pro-Regular.ttf') format('truetype')
+ }
+
+ $sofia-font-regular: "Sofia-Pro-Regular";

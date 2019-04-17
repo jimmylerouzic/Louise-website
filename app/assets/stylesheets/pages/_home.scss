@@ -2,3 +2,15 @@
 .home-title {
   font-family: $sofia-font-regular;
 }
+
+.home-container {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-home {
+  margin: 50px 0;
+}

@@ -12,8 +12,9 @@
 }
 
 .contact-text {
-  width: 65%;
+  width: 50%;
   text-align: justify;
+  font-size: 1.5em;
 }
 
 .form-box {
@@ -24,10 +25,44 @@
   border: 10px solid #555;
 }
 
-h1, p {
-  text-align: center;
-}
-
 input, textarea {
   width: 100%;
+}
+
+.find-me {
+  font-size: 2.2em;
+}
+
+.typewriter {
+  display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 3s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 300;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
 }

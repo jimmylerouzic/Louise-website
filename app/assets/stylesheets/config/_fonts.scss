@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 
 // Define fonts for body and headers
-$body-font: "Sofia-Pro-Regular";
+$body-font: "Sofia-Pro-Light";
 $headers-font: "Sofia-Pro-Regular";
 
 // To use a font file (.woff) uncomment following lines
@@ -26,3 +26,10 @@ $headers-font: "Sofia-Pro-Regular";
  }
 
  $sofia-font-italic: "Sofia-Pro-Light-Italic";
+
+ @font-face {
+   font-family: "Sofia-Pro-Light";
+   src: font-url('Sofia-Pro-Light.ttf') format('truetype')
+ }
+
+ $sofia-font-light: "Sofia-Pro-Light";

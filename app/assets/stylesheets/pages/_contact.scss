@@ -136,3 +136,34 @@ input, textarea {
     display: block;
   }
 }
+
+@media (max-width: 1400px) {
+  .form-contact {
+    position: absolute;
+    width: 80%;
+    margin-left: 0;
+  }
+  .typewriter-text {
+    display: none;
+  }
+  .contact-infos {
+    margin: 80px 0;
+    img {
+      width: 100%;
+    }
+    // position: absolute;
+    // top: 60%;
+  }
+  .contact-text {
+    width: 80%;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 1.3em;
+  }
+  .find-me {
+    font-size: 1.7em;
+  }
+  .phone-tagline {
+    display: block;
+  }
+}

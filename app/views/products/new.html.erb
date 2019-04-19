@@ -1,5 +1,22 @@
 <% if user_signed_in? && current_user.email == "louise@test.com" %>
   <h1 class="text-center mt-5 mb-5">New product</h1>
+  <div class="container form-container mb-5">
+    <div class="new-product-picture">
+      <%= image_tag "new-product.jpg", alt: "Contact", width: 600 %>
+    </div>
+    <div class="new-product-form mt-5 mb-5">
+      <%= simple_form_for @product, url: products_path do |f|%>
+        <div class="form-inputs">
+          <%= f.input :title %>
+          <%= f.input :description %>
+          <%= f.input :picture %>
+        </div>
+        <div class="form-actions">
+          <%= f.button :submit, 'Add a new product', class: 'btn-custom2 mt-5' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
 <% else %>
   <h1 class="text-center mt-5 mb-5" style="color: #be0000;">You don't have the permission for this</h1>
 <% end %>

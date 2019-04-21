@@ -1,0 +1,30 @@
+
+.product-card {
+  img {
+    max-width: 80%;
+    max-height: 65vh;
+    &:hover {
+      opacity: 0.5;
+      // background-color: rgba(10, 10, 10, 0.8);
+    }
+  }
+  width: 50%;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-container {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.product-title {
+  font-family: $sofia-font-italic;
+}

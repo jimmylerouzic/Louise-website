@@ -1,3 +1,13 @@
 <div class="contact-wrapper">
   <h1 class="text-center mt-5 mb-5">Gallery</h1>
+  <div class="product-container">
+    <% @products.each do |product| %>
+      <div class="product-card">
+        <%= link_to product_path(product) do %>
+          <%= cl_image_tag product.picture %>
+        <% end %>
+        <!-- <h3 class="mt-3 product-title"><%= product.title %></h3> -->
+      </div>
+    <% end %>
+  </div>
 </div>

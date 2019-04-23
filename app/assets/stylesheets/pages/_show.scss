@@ -1,6 +1,21 @@
+.show-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-show {
   text-align: center;
+}
 
+.back-and-title {
+  display: flex;
+ align-items: center;
+}
+
+.title-card {
+  flex: 1 0 50%;
 }
 
 .card-picture {
@@ -9,9 +24,5 @@
 
 .card-description {
   margin-top: 20px;
-}
-
-.container-show {
-  display: flex;
 }
 

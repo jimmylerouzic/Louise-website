@@ -1,24 +1,23 @@
-<div class="about-wrapper">
-<div class="container">
-  <div class="back-and-title">
-    <h1 class="text-center mt-5 mb-5"><%= @product.title  %></h1>
-    <div class="button-retour">
+<div class="show-wrapper">
+  <div class="container-show">
+    <div class="back-and-title">
+
+      <div class="button-retour">
           <%=  link_to gallery_path do %>
           <%= image_tag "retour-arriere" %>
           <% end %>
-    </div>
-      <div class="card-show">
-        <div class="title-card">
-
-        </div>
-        <div class="card-picture">
-          <%= cl_image_tag @product.picture %>
-        </div>
-        <div class="card-description">
-           <p><%= @product.description %></p>
-        </div>
       </div>
-  </div>
-
+      <div class="title-card">
+        <h1 class="text-center mt-5 mb-5"><%= @product.title  %></h1>
+      </div>
+    </div>
+    <div class="card-show">
+      <div class="card-picture">
+        <%= cl_image_tag @product.picture %>
+      </div>
+      <div class="card-description">
+        <p><%= @product.description %></p>
+      </div>
+    </div>
   </div>
 </div>

@@ -1,0 +1,7 @@
+.button-retour img {
+  width: 40px;
+  &:hover {
+    transition: 0.4s;
+    transform: scale(1.2);
+  }
+}

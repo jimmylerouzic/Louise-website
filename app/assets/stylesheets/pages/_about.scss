@@ -1,11 +1,27 @@
 
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-about{
+  text-align: center;
+}
+
 .banner-about {
+
+  margin-top: 80px;
+  width: 800px;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+
 }
 
 .banner-about h1 {
+  margin-bottom: 3rem !important;
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -14,8 +30,9 @@
 }
 
 .banner-about p {
+  padding: 15px;
   font-size: 20px;
   color: white;
-  opacity: .7;
+  opacity: .9;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }

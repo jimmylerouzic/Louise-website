@@ -3,8 +3,10 @@
   <div class="product-container">
     <% @products.each do |product| %>
       <div class="product-card">
-        <%= link_to product_path(product) do %>
+        <%= link_to product_path(product.id) do %>
           <%= cl_image_tag product.picture %>
+          <%= product.description %>
+
         <% end %>
         <!-- <h3 class="mt-3 product-title"><%= product.title %></h3> -->
       </div>

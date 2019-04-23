@@ -1,0 +1,21 @@
+<div class="container">
+  <div>
+    <div class="button-retour">
+          <%=  link_to gallery_path do %>
+          <%= image_tag "retour-arriere" %>
+          <% end %>
+    </div>
+      <div class="card-show">
+        <div class="title-card">
+          <h1> <%= @product.title %></h1>
+        </div>
+        <div class="card-picture">
+          <%= cl_image_tag @product.picture %>
+        </div>
+        <div class="card-description">
+           <p><%= @product.description %></p>
+        </div>
+      </div>
+  </div>
+
+</div>

@@ -1,4 +1,12 @@
 
+.description-about {
+   border: 10px solid #555;
+   background-color: rgb(255, 255, 255);
+   margin: 30px;
+   width: 400px
+   // margin: auto;
+}
+
 .about-wrapper {
   display: flex;
   flex-direction: column;
@@ -6,14 +14,11 @@
   align-items: center;
 }
 
-.container-about{
-  text-align: center;
-}
 
 .banner-about {
-
+  margin-bottom: 80px;
   margin-top: 80px;
-  width: 600px;
+  width: 800px;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
@@ -26,14 +31,11 @@
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
   font-weight: bold;
 }
 
 .banner-about p {
   padding: 15px;
-  font-size: 20px;
-  color: white;
   opacity: .9;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }

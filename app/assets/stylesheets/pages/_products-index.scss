@@ -28,3 +28,11 @@
 .product-title {
   font-family: $sofia-font-italic;
 }
+
+.fa-trash-alt {
+  &:hover {
+    transition: 0.4s;
+    transform: scale(1.2);
+  }
+  color: #555;
+}

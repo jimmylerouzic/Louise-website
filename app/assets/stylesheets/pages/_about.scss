@@ -1,10 +1,19 @@
 
 .description-about {
-   border: 10px solid #555;
+   // border: 10px solid #555;
    background-color: rgb(255, 255, 255);
    margin: 30px;
-   width: 400px
+   width: 355px;
+   border-radius:3px;
    // margin: auto;
+}
+
+
+.block-trait {
+  border-top : 3px solid #555;
+  height: 20px;
+  width: 180px;
+  margin: auto;
 }
 
 .about-wrapper {
@@ -17,17 +26,18 @@
 
 .banner-about {
   margin-bottom: 80px;
-  margin-top: 80px;
-  width: 800px;
+  margin-top: 30px;
+  // width: 800px;
+  width: 100vh;
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 100px 0;
   border-radius: 8px;
 
 }
 
 .banner-about h1 {
-  margin-bottom: 3rem !important;
+  margin-bottom: 3rem;
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -39,3 +49,15 @@
   opacity: .9;
   // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
+
+
+@media (max-width: 768px) {
+
+  .banner-about {
+    width: 100%;
+    }
+  .description-about {
+    margin: 20px;
+  }
+}
+

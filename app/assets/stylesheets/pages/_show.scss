@@ -20,6 +20,9 @@
 
 .card-picture {
   margin-top: 15px;
+  img {
+    max-width: 90%;
+  }
 }
 
 .card-picture img {
@@ -28,5 +31,24 @@
 
 .card-description {
   margin-top: 20px;
+  p {
+    font-size: 150%;
+  }
+}
+
+.button-retour2 {
+  display: none;
+  img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .button-retour {
+    display: none;
+  }
+  .button-retour2 {
+    display: inline-block;
+  }
 }
 

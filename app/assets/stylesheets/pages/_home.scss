@@ -13,4 +13,20 @@
 
 .btn-home {
   margin: 50px 0;
+  color: #222;
+  font-size: 40px;
+  font-family: $sofia-font-italic;
+  padding: 10px 15px;
+  border-bottom: 1px solid #555;
+  text-decoration: none;
+  transition: all .5s ease;
+
+  &:hover {
+    color: #222;
+    font-size: 40px;
+    font-family: $sofia-font-italic;
+    text-decoration: none;
+    padding: 20px 15px;
+    border-bottom: 1px solid rgba(0,0,0,0);
+  }
 }

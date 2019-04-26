@@ -11,6 +11,9 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? && current_user.email == "louise@test.com" %>
+      <li class="nav-item">
+        <%= link_to "Home", root_path, class: "nav-link" %>
+      </li>
         <li class="nav-item">
           <%= link_to "About", about_path, class: "nav-link" %>
         </li>
@@ -35,6 +38,9 @@
         </li>
         <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
       <% else %>
+      <li class="nav-item">
+        <%= link_to "Home", root_path, class: "nav-link" %>
+      </li>
         <li class="nav-item">
           <%= link_to "About", about_path, class: "nav-link" %>
         </li>

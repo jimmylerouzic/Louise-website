@@ -31,3 +31,18 @@
     text-decoration: none;
   }
 }
+
+.btn-custom3 {
+  color: #222;
+  font-size: 30px;
+  font-family: $sofia-font-light;
+  // padding: 10px 15px;
+  // border-bottom: 1px solid #222;
+  text-decoration: none;
+  transition: all .7s ease;
+  &:hover {
+    // color: #444;
+    font-family: $sofia-font-italic;
+    text-decoration: none;
+  }
+}

@@ -43,6 +43,7 @@
   background-position: center;
   background-size: cover;
   transition: 0.8s;
+  border: 5px solid #444;
   &:hover {
     transform:scale(1.15);
     transition: 0.8s;

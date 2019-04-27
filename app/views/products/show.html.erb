@@ -23,6 +23,16 @@
           <%= image_tag "retour-arriere" %>
           <% end %>
       </div>
+      <% if user_signed_in? && current_user.email == "louise@test.com" %>
+        <div class="edit-link mb-3">
+          <%= link_to gallery_path, method: :delete, class: "delete-icon", data: { confirm: "Really Louise?" } do %>
+          <i class="fas fa-trash-alt"></i>
+          <% end %>
+          <%= link_to gallery_path, method: :patch, class: "delete-icon" do %>
+          <i class="fas fa-pencil-alt"></i>
+          <% end %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

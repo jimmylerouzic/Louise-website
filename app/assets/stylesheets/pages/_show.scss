@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  }
 
 .card-show {
   text-align: center;
@@ -27,7 +27,7 @@
 }
 
 .card-picture img {
-    width: 650px;
+    max-width: 650px;
 }
 
 .card-description {
@@ -50,6 +50,21 @@
   }
   .button-retour2 {
     display: inline-block;
+  }
+}
+
+.delete-icon {
+  font-size: 200%;
+}
+
+.edit-link {
+  margin-top: 10px;
+  a {
+    color: #555;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
